@@ -31,4 +31,18 @@ The final model I will analyze the model performance ploting a confusion matrix 
 Using [F1 Score](https://en.wikipedia.org/wiki/F1_score) formula.
 
 In statistical analysis of binary classification, the F1 score  is a measure of a test's accuracy. It considers both the precision p and the recall r of the test to compute the score: p is the number of correct positive results divided by the number of all positive results returned by the classifier, and r is the number of correct positive results divided by the number of all relevant samples (all samples that should have been identified as positive). The F1 score is the harmonic average of the [precision and recall](https://en.wikipedia.org/wiki/Precision_and_recall), where an F1 score reaches its best value at 1 (perfect precision and recall) and worst at 0.
-
+### Result
+|index|Algorithm|Accuracy|Recall|Precision|F1\_score|
+|---|---|---|---|---|---|
+|0|SVC\(gamma=0\.01\)|63\.1578947368421|2\.3255813953488373|100\.0|0\.045454545454545456|
+|1|SVC\(C=60, coef0=1, degree=2, kernel='poly'\)|96\.49122807017544|90\.69767441860465|100\.0|0\.951219512195122|
+|2|LinearSVC\(C=50, loss='hinge'\)|92\.98245614035088|100\.0|84\.31372549019608|0\.9148936170212767|
+|3|XGBClassifier\(\)|95\.6140350877193|93\.02325581395348|95\.23809523809523|0\.9411764705882352|
+|4|RandomForestClassifier\(\)|95\.6140350877193|93\.02325581395348|95\.23809523809523|0\.9411764705882352|
+|5|LogisticRegression\(C=63\)|99\.12280701754386|97\.67441860465115|100\.0|0\.988235294117647|
+|6|DecisionTreeClassifier\(criterion='entropy', max\_depth=30\)|94\.73684210526315|90\.69767441860465|95\.1219512195122|0\.9285714285714285|
+|7|AdaBoostClassifier\(\)|95\.6140350877193|93\.02325581395348|95\.23809523809523|0\.9411764705882352|
+|8|GradientBoostingClassifier\(\)|95\.6140350877193|93\.02325581395348|95\.23809523809523|0\.9411764705882352|
+|9|BaggingClassifier\(\)|94\.73684210526315|90\.69767441860465|95\.1219512195122|0\.9285714285714285|
+|10|\<catboost\.core\.CatBoostClassifier object at 0x7fc18e04cc90\>|95\.6140350877193|93\.02325581395348|95\.23809523809523|0\.9411764705882352|
+|11|DecisionTreeClassifier\(\)|92\.98245614035088|86\.04651162790698|94\.87179487179486|0\.9024390243902439|
